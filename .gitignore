@@ -1,1 +1,4 @@
 stale/**
+examples/src/qz/emacs.scm
+examples/src/qz/configs.scm
+
