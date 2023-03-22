@@ -3685,11 +3685,11 @@ subject:/home:/) and tag:new}\"'")
 :ID:       1b524325-ce8c-4d9a-8496-69a393a036e1
 :CREATED:  <2022-02-22 Tue 15:27>
 :ROAM_EXCLUDE: t
-:UPDATED:  [2023-03-02 Thu 15:50]
+:UPDATED:  [2023-03-02 Thu 17:54]
 :END:
 
 #+begin_src scheme :tangle emacs.scm :noweb-ref base-emacs
-(define-module (qz emacs)
+(define-module (qzdl emacs)
   #:use-module (rde serializers elisp)
   #:export (init-el))
 
