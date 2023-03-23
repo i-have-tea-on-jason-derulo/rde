@@ -5,6 +5,9 @@ QEMU_BASE_ARGS= \
 -vga none -device virtio-gpu-pci
 # -vga qxl
 
+sanity:
+	guix repl -L .. ./sanity.scm
+
 all: doc/rde.info
 	@echo default target
 
