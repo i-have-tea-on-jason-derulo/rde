@@ -7,7 +7,7 @@ GUIX_PROFILE=target/profiles/guix
 GUIX=./pre-inst-env ${GUIX_PROFILE}/bin/guix
 
 
-RDE_LOCAL ?= qzdl
+RDE_LOCAL ?= chopi
 SRC_DIR=./src
 _CONFIG_DIR=${SRC_DIR}/${RDE_LOCAL}
 _CONFIG=${_CONFIG_DIR}/configs
@@ -51,7 +51,7 @@ ixy/home/reconfigure: guix
 	RDE_TARGET=ixy-home ${GUIX} home \
 	reconfigure ${CONFIGS}
 
-ixy/system/reconfigure: guix
+ixy/system/reconfigure: # guix
 	RDE_TARGET=ixy-system ${GUIX} system \
 	reconfigure ${CONFIGS}
 
